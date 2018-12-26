@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>mindapang | 袁月的个人博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="#使用hexo部署一个博客服务器 ##环境准备   安装node.js   安装git   如果不会, 自行百度 ##安装hexo相关的工具   全局安装 hexo-cli  npm i hexo-cli -g ##创建一个博客项目使用hexo init &amp;lt;目录名&amp;gt; 下载时间较长, 比较耗时, 需要去github下载模板代码  hexo init hexo-blog 使用npm ins">
+<meta name="keywords" content="Web,前端,node,ES6,开发,程序员,技术宅,java,android,Python,爬虫">
+<meta property="og:type" content="article">
+<meta property="og:title" content="mindapang">
+<meta property="og:url" content="http://yoursite.com/2018/12/26/mindapang/index.html">
+<meta property="og:site_name" content="袁月的个人博客">
+<meta property="og:description" content="#使用hexo部署一个博客服务器 ##环境准备   安装node.js   安装git   如果不会, 自行百度 ##安装hexo相关的工具   全局安装 hexo-cli  npm i hexo-cli -g ##创建一个博客项目使用hexo init &amp;lt;目录名&amp;gt; 下载时间较长, 比较耗时, 需要去github下载模板代码  hexo init hexo-blog 使用npm ins">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-12-26T11:56:40.126Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="mindapang">
+<meta name="twitter:description" content="#使用hexo部署一个博客服务器 ##环境准备   安装node.js   安装git   如果不会, 自行百度 ##安装hexo相关的工具   全局安装 hexo-cli  npm i hexo-cli -g ##创建一个博客项目使用hexo init &amp;lt;目录名&amp;gt; 下载时间较长, 比较耗时, 需要去github下载模板代码  hexo init hexo-blog 使用npm ins">
+  
+    <link rel="alternate" href="/atom.xml" title="袁月的个人博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">袁月的个人博客</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">love my life</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-mindapang" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/12/26/mindapang/" class="article-date">
+  <time datetime="2018-12-26T11:10:48.000Z" itemprop="datePublished">2018-12-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      mindapang
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#使用hexo部署一个博客服务器</p>
+<p>##环境准备<br>   安装node.js<br>   安装git<br>   如果不会, 自行百度</p>
+<p>##安装hexo相关的工具<br>   全局安装 hexo-cli</p>
+<p> <code>npm i hexo-cli -g</code></p>
+<p>##创建一个博客项目<br>使用hexo init &lt;目录名&gt;</p>
+<p>下载时间较长, 比较耗时, 需要去github下载模板代码</p>
+<p> <code>hexo init hexo-blog</code></p>
+<p>使用npm install安装项目依赖</p>
+<p> <code>cd hexo-blog</code></p>
+<p> <code>npm i</code></p>
+<blockquote>
+<p>当安装完毕后, 目录中就会有一系列文件, 其中 _config.yml 存放着博客的配置信息</p>
+</blockquote>
+<p>###_config.yml 配置项如下:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">title: 天成的个人博客 # 标题</span><br><span class="line"></span><br><span class="line">subtitle: Code is my life. # 子标题</span><br><span class="line"></span><br><span class="line">description: Code is my life. # 描述</span><br><span class="line"></span><br><span class="line">keywords: Web,前端,node,ES6,开发,程序员,技术宅,java,android,Python,爬虫 # 关键词, 用于做SEO优化</span><br><span class="line"></span><br><span class="line">author: 李天成 # 作者</span><br><span class="line"></span><br><span class="line">language: zh-CN # 语言</span><br><span class="line"></span><br><span class="line">timezone: Asia/Shanghai # 时区</span><br></pre></td></tr></table></figure></p>
+<p>##更多配置参见官网配置文档</p>
+<p>使用hexo new &lt;文章标题&gt;来写博客</p>
+<p> <code>hexo new frontend_niubi</code></p>
+<p>执行完该命令后, 会在 ./source/_posts/目录下新建一个 frontend_niubi.md 文件 </p>
+<p>之后就可以随心所欲的写笔记了!</p>
+<p>写完笔记后, 使用 hexo g 命令结合主题(配置文件中: theme: landscape)和笔记(./srouce/_posts/目录中)生成HTML/css/js静态文件</p>
+<p> <code>hexo g</code></p>
+<p>执行完命令后, 会在 ./public 中生成静态文件</p>
+<p>最后只需要执行hexo server 启动服务器, 即可看到博客了!</p>
+<p> <code>hexo server</code></p>
+<p><strong>默认开启端口是4000, 通过 -p 可以指定端口号</strong></p>
+<p> <code>hexo server -p 80</code></p>
+<h2 id="hexo与github-io爱的结晶"><a href="#hexo与github-io爱的结晶" class="headerlink" title="hexo与github.io爱的结晶"></a>hexo与github.io爱的结晶</h2><pre><code>Github给每个用户都提供了一个轻量级的web服务器, 每个人的域名是: 用户名.github.io
+
+非常适合做博客, 这里就可以结合hexo生成的静态文件部署一个属于自己的个人博客
+
+在github上新建一个仓库, 仓库名必须是github用户名.github.io
+
+使用hexo的deploy功能完成项目的自动化部署
+
+ 在部署之前, 一定要先配置好部署的参数
+
+hexo支持五个部署方式, 我们采取git
+</code></pre><p>首先在_config.yml配置文件中的 deploy: 节点下配置一下 type</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">deploy: </span><br><span class="line"> 	type: git</span><br></pre></td></tr></table></figure>
+<p>如果使用的是git部署, 必须先装一个包:</p>
+<p> <code>npm install hexo-deployer-git --save</code><br>装完以后修改配置:</p>
+<p> deploy:<br>   type: git # 类型为git<br>   repo: <repository url="">  # 仓库地址<br>   branch: [branch] # 分支名<br>   message: [message] #<br>配置完成后, 执行hexo g 然后执行 hexo d</repository></p>
+<p>   1.hexo d是在将生成的静态文件, </p>
+<p>   2.push到远程刚刚建好的仓库中,</p>
+<ol start="3">
+<li><p>而刚刚建的那个仓库正好可以通过用户名.github.io直接访问,就是一个web服务器</p>
+<p>hexo g<br>hexo d<br>设置hexo的主题<br>墙裂推荐next主题, 不接受反驳!!!</p>
+</li>
+</ol>
+<p>安装</p>
+<p>###进入hexo博客的目录</p>
+<ol>
+<li>cd hexo-blog</li>
+<li>将next的源码克隆到当前目录的themes目录下</li>
+</ol>
+<p> git clone <a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">https://github.com/iissnan/hexo-theme-next</a> themes/next</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/12/26/mindapang/" data-id="cjq54zr0f0000usqhokx5avqr" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">十二月 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/12/26/mindapang/">mindapang</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 袁月<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
